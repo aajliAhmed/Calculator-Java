@@ -101,7 +101,12 @@ public class Calculator implements ActionListener {
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+		
+		for(int i=0;i<10;i++) {
+			if(e.getSource() == numberButtons[i]) {
+				textField.setText(textField.getText().concat(String.valueOf(i)));
+			}
+		}
 		
 	}
 
