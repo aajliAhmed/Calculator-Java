@@ -19,7 +19,7 @@ public class Calculator implements ActionListener {
 	
 
 	public Calculator() {
-		frame = new JFrame("Calculator");
+		frame = new JFrame("Aajli Ahmed Calculator");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(420,550);
 		frame.setLayout(null);
@@ -106,6 +106,9 @@ public class Calculator implements ActionListener {
 			if(e.getSource() == numberButtons[i]) {
 				textField.setText(textField.getText().concat(String.valueOf(i)));
 			}
+		}
+		if(e.getSource()==decButton) {
+			textField.setText(textField.getText().concat("."));
 		}
 		
 	}
