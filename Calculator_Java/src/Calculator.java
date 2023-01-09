@@ -150,6 +150,9 @@ public class Calculator implements ActionListener {
 			textField.setText(String.valueOf(result));
 			num1 = result;
 		}
+		if(e.getSource()==clrButton) {
+			textField.setText("");
+		}
 		
 	}
 
