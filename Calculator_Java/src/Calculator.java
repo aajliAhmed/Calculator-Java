@@ -164,6 +164,11 @@ public class Calculator implements ActionListener {
 				textField.setText(textField.getText()+string.charAt(i));
 			}
 		}
+		if(e.getSource()==negButton) {
+			double temp = Double.parseDouble(textField.getText());
+			temp*=-1;
+			textField.setText(String.valueOf(temp));
+		}
 		
 	}
 
